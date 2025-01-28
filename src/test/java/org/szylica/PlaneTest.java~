@@ -62,13 +62,6 @@ class PlaneTest {
     }
 
     @Test
-    void testSumCapacityNoPreviousCapacity() {
-        plane.clear(0); // Czyszczenie historii (ustawia capacity na 0)
-        long sum = plane.sumCapacity(20, 30); // Zakres w pustej historii
-        assertEquals(0, sum, "Suma pojemności powinna wynosić 0, gdy historia jest pusta");
-    }
-
-    @Test
     void testToString() {
         plane.update(5, 150);
         String expected = "{0=100, 5=150}";
